@@ -1,0 +1,68 @@
+Readme.md = markup language , used to add formatting to elements in a plan text elements
+Origin = referns to the remote repostirory
+working directory = make changes to files, add, delete , rename edit etc.
+Staging area      = List of revised files  to be added  to the repo (git add)
+Repository        = Changes are committed (saved) to the repo. (git commit) 
+Staging files with git add:
+---------------------------
+git add  -A       = Stages all changes (new, modified or deleted files)
+git add .         = Stages new and modified files only
+git add -u        = Stages modified and deleted files only
+git add <file>    = Stages a specific file
+
+git restore  --staged <file> to unstage
+
+Committing a file will create a snapshot of the changes. Every commit required a message. What changes are containted withing the commit.
+git commit -m <"message">
+The output file shows a summary of what has been commited 	
+
+
+1) When adding modified files to the repository, what commands are used and in what order?
+Use git add to move the modified files from your working directory to the staging area. Then git commit the add the files to the repo.
+	
+2)
+After creating a remote repository in your Git hosting account, how do you create a local copy of the remote repo?
+
+    Use git clone with the remote repo URL.
+
+3) Which of the following commands will set the username for all your repositories.
+git config --global user.name "Your Username"
+
+4)In the command ls -a, what does the -a represent?
+An argument, used to run different options such as listing all files, including hidden files.
+
+5)What is command used for creating a local Git repository?
+git init
+
+6)What are the two commands used to keep a local and remote repository in sync and how are they used?
+git push is used to upload the local commits into the remote repository. git pull is used download the commits from the remote repository, and merge the changes into the local repository.
+
+7)
+The git status command can be used to show: 
+A. what branch you're on
+B. whether the local and remote repos have the same number of commits
+C. a list of modified and unmodified files
+D. which files have been staged
+D. which files have been staged
+
+The git status command can be used to show: A. what branch you're on B. whether the local and remote repos have the same number of commits C. a list of modified and unmodified files D. which files have been staged
+You are correct!
+    A, B, D
+`git status` only shows a list of modified files. Unmodified files are not tracked until they've been changed in some way.
+
+8) Which command is used to navigate to different directories?
+cd
+
+9) If you delete the local repository, will the remote repository be deleted as well?
+False. The remote repository must be deleted from the hosting service account, in a separate step.
+
+10)
+If you wanted to push the commits from your local master branch to your remote master branch, what would the command look like?
+git push origin master
+
+11)
+Which of the following is a benefit for using command line over a GUI?
+All Git commands can be executed using the command line. With a GUI, the features will vary.
+
+Chapter 3
+-----------
